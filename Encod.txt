@@ -1,0 +1,3 @@
+iconv -c -t utf8 BlockbusterData.csv > filename.utf8.csv
+
+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
