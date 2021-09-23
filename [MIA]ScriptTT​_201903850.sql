@@ -48,8 +48,6 @@ CREATE TABLE temporal (
    
 COPY public.temporal from '/home/roshgard/Escritorio/[MIA]Practica1_201903850/BlockBusterData2.csv' delimiter ';' csv header;       
 
-select * from public.temporal; 
-
 
 
 
