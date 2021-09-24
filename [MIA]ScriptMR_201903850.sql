@@ -113,7 +113,7 @@ ALTER TABLE Actor ADD CONSTRAINT Actor_PrimaryK PRIMARY KEY (id_Actor);
 CREATE TABLE Pelicula(
     id_Pelicula        		SERIAL,
     nombre_Pelicula    		VARCHAR(100),
-    decripcion_Pelicula    	VARCHAR(200),
+    descripcion_Pelicula    	VARCHAR(200),
     lanzamiento_Pelicula    INT,
     duracion_Pelicula    	INT,
     dias_pelicula    		INT,
