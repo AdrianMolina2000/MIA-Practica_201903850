@@ -199,7 +199,8 @@ CREATE TABLE Traduccion_Pelicula(
 );
 
 ALTER TABLE Traduccion_Pelicula ADD CONSTRAINT Traduccion_Pelicula_PrimaryK PRIMARY KEY (id_Traduccion_Pelicula);
-
+ALTER TABLE Traduccion_Pelicula ADD CONSTRAINT Traduccion_Pelicula_FkIdioma  FOREIGN KEY (id_Idioma) REFERENCES Idioma(id_Idioma);
+ALTER TABLE Traduccion_Pelicula ADD CONSTRAINT Traduccion_Pelicula_FkPelicula FOREIGN KEY (id_Pelicula) REFERENCES Pelicula(id_Pelicula);
 
 
 

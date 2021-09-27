@@ -32,7 +32,7 @@ WHERE ciudad_cliente != '-'
   AND nombre_pais = pais_cliente
 ;
 
---Llenando Tabla Cliente
+--Llenando Tabla Tienda
 INSERT INTO tienda(nombre_tienda, direccion_tienda)
 SELECT DISTINCT temporal.nombre_tienda, temporal.direccion_tienda
 FROM temporal
@@ -185,9 +185,9 @@ WHERE lenguaje_pelicula != '-'
 
 
 --llenado la tabla traduccion pelicula
-insert into traduccion_pelicula (id_idioma, id_pelicula)
-select distinct pelicula.id_pelicula, idioma.id_idioma
+insert into traduccion_pelicula (id_Idioma, id_pelicula)
+select distinct idioma.id_idioma , pelicula.id_pelicula 
 from idioma, pelicula, temporal
 where temporal.lenguaje_pelicula = idioma.nombre_idioma
   AND temporal.nombre_pelicula = pelicula.nombre_pelicula
- ;
+;
