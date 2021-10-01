@@ -58,7 +58,7 @@ from(
     inner join ciudad on ciudad.id_ciudad = cliente.id_ciudad 
     inner join pais on pais.id_pais = ciudad.id_pais 
     order by cliente_renta.total_rentadas desc
-    --limit 1
+    limit 1
 )cliente_datos
 
 inner join renta on renta.id_clienter = cliente_datos.id_cliente

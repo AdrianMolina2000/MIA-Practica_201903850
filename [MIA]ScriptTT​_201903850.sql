@@ -46,7 +46,7 @@ CREATE TABLE temporal (
     );
     
    
-COPY public.temporal from '/home/roshgard/Escritorio/[MIA]Practica1_201903850/BlockBusterData2.csv' delimiter ';' csv header;       
+COPY public.temporal from '/home/roshgard/Escritorio/[MIA]Practica1_201903850/BlockbusterData.csv' delimiter ';' csv header ENCODING 'LATIN3';       
 
 
 

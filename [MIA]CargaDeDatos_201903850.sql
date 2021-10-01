@@ -1,17 +1,17 @@
 
 --Llenar Tabla Pais
 INSERT INTO pais (nombre_pais)
-SELECT DISTINCT pais_tienda
-FROM temporal 
-UNION
-SELECT DISTINCT pais_empleado
-FROM temporal 
-UNION
-SELECT DISTINCT pais_cliente
+SELECT pais_tienda
 FROM temporal 
 where pais_tienda != '-'
-  and pais_empleado != '-'
-  and pais_cliente != '-'
+UNION
+SELECT pais_empleado
+FROM temporal 
+where pais_empleado != '-'
+UNION
+SELECT pais_cliente
+FROM temporal 
+where pais_cliente != '-'
 ;
 
 --llenando la Tabla Ciudad
